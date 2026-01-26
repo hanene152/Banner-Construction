@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banner Construction Group | Commercial General Contractor</title>
+    <meta
+      name="description"
+      content="Banner Construction Group is a commercial general contractor specializing in tenant improvements, buildouts, renovations, and facility maintenance."
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="#top" aria-label="Banner Construction Group">
+          <img class="brand-logo" src="assets/images/logo.png" alt="Banner Construction Group logo" />
+          <span class="brand-text">Banner Construction Group</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav class="nav" id="nav">
+          <a href="#services">Services</a>
+          <a href="#markets">Markets</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn">Request a Quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="pill">Commercial • Licensed • Insured</p>
+
+            <h1>Commercial construction that stays on schedule.</h1>
+
+            <p class="sub">
+              Banner Construction Group delivers tenant improvements, buildouts, renovations, and facility work with clear
+              communication, clean job sites, and accountable timelines.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#contact">Request a Quote</a>
+              <a class="btn btn-ghost" href="#services">View Services</a>
+            </div>
+
+            <div class="stats" aria-label="Company highlights">
+              <div class="stat">
+                <div class="stat-num">Fast</div>
+                <div class="stat-label">turnarounds</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">Clear</div>
+                <div class="stat-label">scope & updates</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">Clean</div>
+                <div class="stat-label">job sites</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h2>Request a Quote</h2>
+            <p class="muted">Share a few details and we’ll follow up within 1 business day.</p>
+
+            <form class="form" id="quoteForm">
+              <div class="grid-2">
+                <label>
+                  Name
+                  <input name="name" type="text" placeholder="Your name" required />
+                </label>
+                <label>
+                  Phone
+                  <input name="phone" type="tel" placeholder="(555) 555-5555" />
+                </label>
+              </div>
+
+              <label>
+                Work Email
+                <input name="email" type="email" placeholder="you@company.com" required />
+              </label>
+
+              <label>
+                Company / Site
+                <input name="company" type="text" placeholder="Company name or location" />
+              </label>
+
+              <label>
+                Project Type
+                <select name="type" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option>Tenant Improvement</option>
+                  <option>Commercial Buildout</option>
+                  <option>Renovation</option>
+                  <option>Repair / Maintenance</option>
+                  <option>Capital Improvement</option>
+                  <option>Other</option>
+                </select>
+              </label>
+
+              <label>
+                Project Details
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Scope, timeline, location, and any constraints (after-hours work, occupied space, etc.)"
+                  required
+                ></textarea>
+              </label>
+
+              <button class="btn btn-full" type="submit">Submit Request</button>
+              <p class="tiny muted" id="formStatus"></p>
+            </form>
+
+            <div class="contact-mini">
+              <div><strong>Email:</strong> estimating@bannerconstruction.com</div>
+              <div><strong>Hours:</strong> Mon–Fri 8am–5pm</div>
+              <div><strong>Service Area:</strong> South Florida</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head">
+            <h2>Services</h2>
+            <p class="muted">Commercial services designed for occupied spaces, tight timelines, and professional standards.</p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <h3>Tenant Improvements</h3>
+              <p class="muted">Office, medical, and retail improvements—phased work and clean handoffs.</p>
+            </article>
+
+            <article class="card">
+              <h3>Commercial Buildouts</h3>
+              <p class="muted">Turnkey interior buildouts: framing, finishes, MEP coordination, and closeout.</p>
+            </article>
+
+            <article class="card">
+              <h3>Renovations</h3>
+              <p class="muted">Refresh and upgrade existing spaces with minimal disruption to operations.</p>
+            </article>
+
+            <article class="card">
+              <h3>Repairs & Maintenance</h3>
+              <p class="muted">Responsive repairs, punch lists, and ongoing facility maintenance.</p>
+            </article>
+
+            <article class="card">
+              <h3>Pre-Construction</h3>
+              <p class="muted">Budgeting, scope planning, schedules, and value engineering support.</p>
+            </article>
+
+            <article class="card">
+              <h3>Permits & Coordination</h3>
+              <p class="muted">Permitting, inspections, vendor coordination, and project communication.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="markets">
+        <div class="container">
+          <div class="section-head">
+            <h2>Markets Served</h2>
+            <p class="muted">Experience across a range of commercial environments.</p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <h3>Medical & Healthcare</h3>
+              <p class="muted">Clinics, offices, specialty spaces, and occupied environments.</p>
+            </article>
+
+            <article class="card">
+              <h3>Office & Corporate</h3>
+              <p class="muted">Tenant improvements, conference areas, and workspace upgrades.</p>
+            </article>
+
+            <article class="card">
+              <h3>Retail & Hospitality</h3>
+              <p class="muted">Buildouts and renovations designed around business hours and traffic flow.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <h2>Featured Projects</h2>
+            <p class="muted">Add photos later—these placeholders are ready for your portfolio.</p>
+          </div>
+
+          <div class="gallery">
+            <div class="shot">
+              <div class="ph" aria-hidden="true"></div>
+              <div class="shot-cap">
+                <strong>Office Tenant Improvement</strong>
+                <span class="muted">Phased work • Clean turnover</span>
+              </div>
+            </div>
+            <div class="shot">
+              <div class="ph" aria-hidden="true"></div>
+              <div class="shot-cap">
+                <strong>Medical Suite Renovation</strong>
+                <span class="muted">Occupied space • Minimal disruption</span>
+              </div>
+            </div>
+            <div class="shot">
+              <div class="ph" aria-hidden="true"></div>
+              <div class="shot-cap">
+                <strong>Retail Buildout</strong>
+                <span class="muted">Fast schedule • Professional finish</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="about">
+        <div class="container about">
+          <div>
+            <h2>About Banner Construction Group</h2>
+            <p class="muted">
+              We’re a commercial construction team focused on communication, accountability, and clean execution.
+              Our process is built for businesses—clear scope, predictable schedules, and professional closeout.
+            </p>
+
+            <ul class="checklist">
+              <li>Clear estimates, scopes, and schedules</li>
+              <li>Coordination with vendors and building management</li>
+              <li>Clean job sites and respectful occupied-space work</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3>How we work</h3>
+            <div class="why">
+              <div class="why-item">
+                <strong>Plan</strong>
+                <p class="muted">We confirm scope, timeline, access, and constraints upfront.</p>
+              </div>
+              <div class="why-item">
+                <strong>Execute</strong>
+                <p class="muted">We keep communication tight and the site clean and safe.</p>
+              </div>
+              <div class="why-item">
+                <strong>Close Out</strong>
+                <p class="muted">Punch list, final walkthrough, and documentation—done right.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p class="muted">Call, email, or submit a request and we’ll follow up quickly.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Get in touch</h3>
+              <p class="muted">
+                <strong>Email:</strong> estimating@bannerconstruction.com<br />
+                <strong>Hours:</strong> Mon–Fri 8am–5pm<br />
+                <strong>Service Area:</strong> South Florida
+              </p>
+
+              <div class="contact-actions">
+                <a class="btn" href="mailto:estimating@bannerconstruction.com">Email Estimating</a>
+                <a class="btn btn-ghost" href="#services">View Services</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <h3>Location</h3>
+              <p class="muted">Serving South Florida and surrounding areas.</p>
+              <div class="map-ph" aria-hidden="true">Map placeholder</div>
+              <p class="tiny muted">Add a Google Maps embed later when you deploy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>
+          <div class="footer-brand">Banner Construction Group</div>
+          <div class="tiny muted">© <span id="year"></span> Banner Construction Group. All rights reserved.</div>
+        </div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#markets">Markets</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
