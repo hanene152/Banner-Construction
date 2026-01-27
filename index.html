@@ -19,15 +19,13 @@
           <span class="brand-text">Banner Construction Group</span>
         </a>
 
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-          ☰
-        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
 
         <nav class="nav" id="nav">
+          <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#markets">Markets</a>
           <a href="#projects">Projects</a>
-          <a href="#about">About</a>
           <a href="#contact" class="btn">Get in Touch</a>
         </nav>
       </div>
@@ -38,75 +36,48 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="pill">Commercial • Licensed • Insured</p>
-
             <h1>Delivering Projects the Right Way</h1>
-
-
 
             <div class="hero-actions">
               <a class="btn" href="#contact">Get in Touch</a>
               <a class="btn btn-ghost" href="#services">View Services</a>
             </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- MOVED UP: About now sits right above Services -->
+      <section class="section alt" id="about">
+        <div class="container about">
+          <div>
+            <h2>About Banner Construction Group</h2>
+            <p class="muted">
+              We’re a commercial construction team focused on communication, accountability, and clean execution.
+              Our process is built for businesses—clear scope, predictable schedules, and professional closeout.
+            </p>
 
+            <ul class="checklist">
+              <li>Clear estimates, scopes, and schedules</li>
+              <li>Coordination with vendors and building management</li>
+              <li>Clean job sites and respectful occupied-space work</li>
+            </ul>
+          </div>
 
-          <div class="hero-card">
-            <h2>Get in Touch</h2>
-            <p class="muted">Share a few details and we’ll follow up within 1 business day.</p>
-
-            <form class="form" id="quoteForm">
-              <div class="grid-2">
-                <label>
-                  Name
-                  <input name="name" type="text" placeholder="Your name" required />
-                </label>
-                <label>
-                  Phone
-                  <input name="phone" type="tel" placeholder="(555) 555-5555" />
-                </label>
+          <div class="about-card">
+            <h3>How we work</h3>
+            <div class="why">
+              <div class="why-item">
+                <strong>Plan</strong>
+                <p class="muted">We confirm scope, timeline, access, and constraints upfront.</p>
               </div>
-
-              <label>
-                Work Email
-                <input name="email" type="email" placeholder="you@company.com" required />
-              </label>
-
-              <label>
-                Company / Site
-                <input name="company" type="text" placeholder="Company name or location" />
-              </label>
-
-              <label>
-                Project Type
-                <select name="type" required>
-                  <option value="" disabled selected>Select one</option>
-                  <option>Tenant Improvement</option>
-                  <option>Commercial Buildout</option>
-                  <option>Renovation</option>
-                  <option>Repair / Maintenance</option>
-                  <option>Capital Improvement</option>
-                  <option>Other</option>
-                </select>
-              </label>
-
-              <label>
-                Project Details
-                <textarea
-                  name="message"
-                  rows="4"
-                  placeholder="Scope, timeline, location, and any constraints (after-hours work, occupied space, etc.)"
-                  required
-                ></textarea>
-              </label>
-
-              <button class="btn btn-full" type="submit">Submit Request</button>
-              <p class="tiny muted" id="formStatus"></p>
-            </form>
-
-            <div class="contact-mini">
-              <div><strong>Email:</strong> estimating@bannerconstruction.com</div>
-              <div><strong>Hours:</strong> Mon–Fri 8am–5pm</div>
-              <div><strong>Service Area:</strong> South Florida</div>
+              <div class="why-item">
+                <strong>Execute</strong>
+                <p class="muted">We keep communication tight and the site clean and safe.</p>
+              </div>
+              <div class="why-item">
+                <strong>Close Out</strong>
+                <p class="muted">Punch list, final walkthrough, and documentation—done right.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -212,43 +183,8 @@
         </div>
       </section>
 
-      <section class="section alt" id="about">
-        <div class="container about">
-          <div>
-            <h2>About Banner Construction Group</h2>
-            <p class="muted">
-              We’re a commercial construction team focused on communication, accountability, and clean execution.
-              Our process is built for businesses—clear scope, predictable schedules, and professional closeout.
-            </p>
-
-            <ul class="checklist">
-              <li>Clear estimates, scopes, and schedules</li>
-              <li>Coordination with vendors and building management</li>
-              <li>Clean job sites and respectful occupied-space work</li>
-            </ul>
-          </div>
-
-          <div class="about-card">
-            <h3>How we work</h3>
-            <div class="why">
-              <div class="why-item">
-                <strong>Plan</strong>
-                <p class="muted">We confirm scope, timeline, access, and constraints upfront.</p>
-              </div>
-              <div class="why-item">
-                <strong>Execute</strong>
-                <p class="muted">We keep communication tight and the site clean and safe.</p>
-              </div>
-              <div class="why-item">
-                <strong>Close Out</strong>
-                <p class="muted">Punch list, final walkthrough, and documentation—done right.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contact">
+      <!-- Contact section stays near the bottom -->
+      <section class="section alt" id="contact">
         <div class="container">
           <div class="section-head">
             <h2>Contact</h2>
@@ -277,6 +213,69 @@
               <p class="tiny muted">Add a Google Maps embed later when you deploy.</p>
             </div>
           </div>
+
+          <!-- MOVED HERE: Contact form card is now at the bottom of the page -->
+          <div class="contact-form-wrap">
+            <div class="hero-card">
+              <h2>Get in Touch</h2>
+              <p class="muted">Share a few details and we’ll follow up within 1 business day.</p>
+
+              <form class="form" id="quoteForm">
+                <div class="grid-2">
+                  <label>
+                    Name
+                    <input name="name" type="text" placeholder="Your name" required />
+                  </label>
+                  <label>
+                    Phone
+                    <input name="phone" type="tel" placeholder="(555) 555-5555" />
+                  </label>
+                </div>
+
+                <label>
+                  Work Email
+                  <input name="email" type="email" placeholder="you@company.com" required />
+                </label>
+
+                <label>
+                  Company / Site
+                  <input name="company" type="text" placeholder="Company name or location" />
+                </label>
+
+                <label>
+                  Project Type
+                  <select name="type" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option>Tenant Improvement</option>
+                    <option>Commercial Buildout</option>
+                    <option>Renovation</option>
+                    <option>Repair / Maintenance</option>
+                    <option>Capital Improvement</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+
+                <label>
+                  Project Details
+                  <textarea
+                    name="message"
+                    rows="4"
+                    placeholder="Scope, timeline, location, and any constraints (after-hours work, occupied space, etc.)"
+                    required
+                  ></textarea>
+                </label>
+
+                <button class="btn btn-full" type="submit">Submit Request</button>
+                <p class="tiny muted" id="formStatus"></p>
+              </form>
+
+              <div class="contact-mini">
+                <div><strong>Email:</strong> estimating@bannerconstruction.com</div>
+                <div><strong>Hours:</strong> Mon–Fri 8am–5pm</div>
+                <div><strong>Service Area:</strong> South Florida</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -288,6 +287,7 @@
           <div class="tiny muted">© <span id="year"></span> Banner Construction Group. All rights reserved.</div>
         </div>
         <div class="footer-links">
+          <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#markets">Markets</a>
           <a href="#projects">Projects</a>
@@ -299,3 +299,4 @@
     <script src="scripts/main.js"></script>
   </body>
 </html>
+
